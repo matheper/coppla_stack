@@ -1,0 +1,114 @@
+@import "variables";
+
+.clear{
+    clear:both;
+}
+
+body {
+    font: 100% Ubuntu, Arial, FreeSans, sans-serif;
+    margin: 0px;
+//    overflow:hidden;
+}
+
+.wrapper{
+    width: 100%;
+    color: $text-dark;
+
+    #slide1{
+        #change-color{
+            float:right;
+            border: 1px solid;
+            padding: $padding-default;
+            border-radius: 4px;
+            cursor:pointer;
+        
+            &:hover{
+                background-color:$text-dark;
+                color: $text-light;
+            }
+        }
+        h1{
+            margin:10px 0;
+            font-size: 150px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .description{
+           float: left;
+           font-size: 50px;
+           margin-top: 75px;
+        }
+    }
+
+    .page{
+        height: 1200px;
+        padding: $padding-default;
+        text-align: right;
+
+        .slide{
+            padding:$padding-default;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            
+            .title{
+                font-weight:normal;
+                font-size: 50px;
+            }
+
+            .description-item{
+                display: block;
+                font-size: $font-normal;
+                margin-top: 10px;
+                font-weight:normal;
+
+                &.small{
+                    font-size:$font-small;
+                    margin-top:0px;
+                }
+
+                &.large{
+                    font-size:$font-large;
+                }
+            }
+
+            .content{
+                min-height:400px;
+                .one_img{
+                    float: left;
+                    width: 800px;
+                }
+                .img_sass_var{
+                    margin: 0 auto;
+                    text-align: right;
+                    img{
+                        width: 395px;
+                    }
+                }
+                .items_install{
+                    font-size: $font-normal;
+                    text-align: left;
+                    blockquote{
+                        font-size:$font-small;
+                    }
+                }
+                a{
+                    text-decoration:none;
+                    &:hover, &:active, &:visited{
+                        color: inherit;
+                    }
+                }
+            }
+            .reference{
+                text-decoration:none;
+                &:hover, &:active, &:visited{
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    &.second{
+        color: $text-light;
+    }
+}

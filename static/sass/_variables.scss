@@ -1,0 +1,33 @@
+// Colors
+
+$text-light: #FFFFFF;
+$text-dark: #656565;
+$font-normal:25px;
+$font-large:35px;
+$font-small:20px;
+$padding-default: 10px;
+
+$violet-dark: #8600A4;
+$blue: #0056AD;
+$pink: #E666D6;
+$blue-light: #C1E0E0;
+$light: #FFFFFF;
+
+$palette: (
+    first: ($blue-light $blue-light $light),
+    second: ($violet-dark $blue $pink),
+);
+
+@each $class, $colors in $palette{
+    .#{$class} {
+        .page:nth-child(3n+0){
+            background-image: linear-gradient(to bottom,  nth($colors, 1), nth($colors, 2) 100%);
+        }
+        .page:nth-child(3n+1){
+            background-image: linear-gradient(to bottom,  nth($colors, 2), nth($colors, 3) 100%);
+        }
+        .page:nth-child(3n+2){
+            background-image: linear-gradient(to bottom,  nth($colors, 3), nth($colors, 1) 100%);
+        }
+    }
+}
