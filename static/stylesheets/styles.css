@@ -130,20 +130,22 @@ body {
 /* line 95, ../sass/styles.scss */
 .wrapper .page .slide .content a {
   text-decoration: none;
+  color: #656565;
 }
-/* line 97, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .wrapper .page .slide .content a:hover, .wrapper .page .slide .content a:active, .wrapper .page .slide .content a:visited {
-  color: inherit;
+  color: #656565;
 }
-/* line 102, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .wrapper .page .slide .reference {
   text-decoration: none;
+  color: #656565;
 }
-/* line 104, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .wrapper .page .slide .reference:hover, .wrapper .page .slide .reference:active, .wrapper .page .slide .reference:visited {
-  color: inherit;
+  color: #656565;
 }
-/* line 111, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .wrapper.second {
   color: white;
 }

@@ -94,15 +94,17 @@ body {
                 }
                 a{
                     text-decoration:none;
+                    color: $text-dark;
                     &:hover, &:active, &:visited{
-                        color: inherit;
+                        color: $text-dark;
                     }
                 }
             }
             .reference{
                 text-decoration:none;
+                color: $text-dark;
                 &:hover, &:active, &:visited{
-                    color: inherit;
+                    color: $text-dark;
                 }
             }
         }
